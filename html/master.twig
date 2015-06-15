@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="es">
+    <head>
+        {% block head %}
+            <meta charset="UTF-8">
+            <title>MAPA</title>
+
+            <!-- abre LINK -->
+            <link href="favicon.ico" rel="shortcut icon">
+            <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+            <meta name="description" content="">
+            <meta name="Keywords" content="">
+            <meta property="og:image" content="" />
+            <meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+
+            <!-- B O O T S T R A P -->
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="{{ paths.PATH_CSS }}bootstrap.css">
+
+            <!-- abre SCRIPT -->
+            <script src="{{ paths.PATH_JS }}jquery-1.11.2.min.js"></script>
+
+
+
+            <script type="text/javascript">
+                var PATH_CONTROLLER = '{{ paths.PATH_CONTROLLER }}';
+                var PATH_HOME = '{{ paths.PATH_HOME }}';
+            </script> 
+
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+            {% include 'analyticstracking.twig' %}
+
+            <div class="headerAdmin">
+                {% if(logueado) %}
+                    <div class="divSalir">
+                        <span class="nameAdmin"><i class="fa fa-user fa-lg marginRight5"></i>{{ nombre_visible }}</span>
+                        <form action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php" method="post">
+                            <input type="hidden" name="section" value="logout">
+                            <input type="submit" value="Salir">
+                        </form>
+                    </div>
+                {% else %}
+                    <div class="divSalir">
+                        <a href="{{ paths.PATH_CONTROLLER }}controladorAdmin.php?seccion=login" class="btnCalado"><i class="fa fa-share  fa-lg"></i>Ingresar</a>
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- H E A D E R -->
+            <header>
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>MAPA</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if(logueado) %}
+                    <!-- N A V -->
+                    {% include 'desplegar-menu.twig' %}
+
+                {% endif %}
+
+            </header>          
+        {% endblock %}
+
+        <!-- abre S E C T I O N -->
+
+        {% block contenido %}
+        {% endblock %}
+
+        {% block footer %}
+            <!-- abre F O O T E R -->
+            <footer>
+
+            </footer>
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="{{ paths.PATH_JS }}bootstrap.min.js"></script>
+
+            <script src="{{ paths.PATH_JS }}funcs.js"></script>
+        {% endblock %}
+
+    </body>
+</html>
