@@ -270,12 +270,24 @@
         <div class="row">
             <input id="pac-input" class="controls" type="text" placeholder="Buscar">
         </div>
-        <div class="row">
-            <div id="map_canvas" style="width:900px; height:600px"></div>
-        </div>
-        <div class="listado">
-            
-        </div>
+        <div class="row"> 
+            <div class="col-md-4">
+                <div class="listado">
+                    <h4>Listado de locales</h4>
+
+                    <!-- VER LISTADO DE LOCALES-->
+                    <div class="listado-locales">
+                        <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                        <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                        <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mapa-locales" id="map_canvas" ></div>
+                </div>
+            </div>
+           
 
     </section>
 {% endblock %}

@@ -1,0 +1,159 @@
+/* CSS Document */
+
+body{font-family:Arial, Helvetica, sans-serif; font-size:12px; margin:0px; padding:0px; background-color:#C6C7C9;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+ul, li, h1, h2, h3, h4, form{margin:0px; padding:0px; font-weight:normal;}
+a, img{border:0px; outline:0px; text-decoration:none;}
+ul, li{list-style:none;}
+
+.century{font-family:"Century Gothic";}
+
+.gris{color:#7B7C7E;}
+.gris2{color:#19171A;}
+.celeste{color:#0281C8;}
+.fs16{font-size:16px;}
+.fs20{font-size:24px;}
+.fs11{font-size:11px;}
+.fs141{font-size:14px; margin:0 0 4px 0; color:#666666;}
+
+a.linkceleste{color:#0281C8;}
+a.linkceleste:hover{color:#7B7C7E;}
+
+.container{width:1001px; margin:auto;  background-color:#FFF;}
+.container_slider{height:558px; margin:auto; background-position:center;background-image:url(imagenes/cabecera.png); background-repeat:no-repeat;}
+/*.col_izq{float:left; width:712px; margin:14px 21px 24px 0;}
+.col_der{float:left; width:222px; margin:14px 0 0 0; padding:6px 0 0 0;}*/
+
+
+.col_izq{float:left; width:597px; margin:14px 21px 24px 0;}
+.col_der{float:left; width:280px; margin:14px 0 0 0; padding:6px 0 0 0;}
+.cuerpo{padding:0 48px 0 21px; margin:auto; width:898px;}
+
+.banners_home img{float:left; margin:0 22px 22px 0;}
+.tithome{color:#19171A; font-size:24px; margin:0 0 20px 0;}
+
+.titslider{width:942px; height:79px; background-color:#6F7072; margin:auto; position:absolute; left:30px;}
+.titulo1{font-size:16px; color:#19171A; font-family:"Century Gothic"; font-weight:bold;}
+.texto1{font-size:12px; color:#7B7C7E;}
+
+.tit2{font-size:19px; color:#F39500; font-family:"Century Gothic"; font-weight:bold;}
+.textohedaly{color:#666666; margin:19px 0 48px 0; font-size:13px; line-height:14px;}
+.naranja{color:#F39500; font-size:14px;}
+
+.fotoprods{margin:0 0 21px 0;}
+.lineaprods{border-bottom:solid 1px #706F74; padding:0 0 3px 0; height:34px; margin:0 0 14px 0;}
+.lineaprods a{background-color:#6F7072; display:block; font-family:"Century Gothic"; color:#FFF; text-align:center; padding:6px; float:left; font-size:14px; text-decoration:none; margin:0 1px 0 1px;}
+
+.modhomepie{width:185px; float:left;}
+.modhomepie h1{font-size:18px; color:#727274; font-family:"Century Gothic"; font-weight:bold; border-bottom:solid 1px #727274; padding:0 0 6px 0;}
+.modhomepie h2{font-size:11px; color:#7B7C7E; margin:14px 0 14px 0; line-height:14px;}
+
+.productos{width:228px; float:left; color:#7B7C7E; margin:0 14px 14px 0;}
+.productos_foto{margin:0 0 9px 0;}
+
+.productosficha{width:637px; float:left; color:#7B7C7E; margin:0 9px 14px 0; padding:9px 0 9px 9px;}
+
+.menuactive a{color:#FFF; margin:0 6px 0 0; text-decoration:none; text-shadow: 1px 1px 2px #000000;
+        filter: dropshadow(color=#000000, offx=1, offy=1);}
+.titseccion{height:39px; background-color:#000; margin:14px 0 0 0; color:#FFF; font-size:24px; padding:11px 0 0 30px; font-family:"Century Gothic";}
+.novs{color:#6F7072;}
+a.leermas{color:#6D6E70; font-family:"Century Gothic"; font-size:14px; text-decoration:none;}
+a.leermas:hover{color:#000;}
+.novs h1{color:#000; font-size:24px; margin:9px 0 9px 0; font-family:"Century Gothic";}
+.etiquetas a{color:#6F7072; text-decoration:none;}
+.etiquetas{margin:9px 0 9px 0;}
+.fondonov{width:129px; height:17px; background-image:url(imagenes/fondonov.png); color:#FFF; padding:4px 0 0 8px;}
+.inputnews1{background-image:url(imagenes/botones1.png); width:161px; height:24px; padding:0 0 0 4px; border:none; background-color:transparent;}
+.inputbuscador{background-image:url(imagenes/botones_r6_c5.png); width:93px; height:26px; padding:0 0 0 4px; border:none; background-color:transparent;}
+
+.contactenos_izq{float:left; width:462px;}
+.contactenos_der{float:left; width:425px;}
+.contactenos_izq h2{font-size:18px; color:#666666; font-style:italic; margin:20px 0 24px 0;}
+.contactenos_izq h3{padding:0 0 0 19px; color:#666666; font-style:italic; font-size:16px; line-height:24px;}
+
+.contactenos_der h1{padding:0 0 4px 0; margin:28px 0 14px 0; font-size:16px;}
+.contactenos_input{width:425px; border:solid 1px #F2F2F2; height:31px; padding:10px 0 0 10px; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#666666; font-weight:bold;   margin:0 0 6px 0;}
+.contactenos_boton{color:#000; border:none;  background-color:#FFFFFF; font-weight:bold; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.textoempresa{font-size:12px; color:#6F7072; line-height:16px;}
+.textoempresa p{margin:0;}
+.textomarcas{font-size:12px; color:#6F7072; line-height:14px;}
+.titempresa{font-size:21px; color:#1A181D; padding:9px 0 9px 0; font-family:"Century Gothic"; font-weight:bold;}
+.titmarcas{color:#525252; font-size:20px; padding:14px 0 14px 0; font-family:"Century Gothic";} 
+
+.tab1{border-bottom:solid 1px #727274; width:597px; margin:10px 0 10px 0;}
+a.vertodos{float:left; display:block; width:89px; height:12px; border-top:solid 1px #727274; margin:0 0 0 3px; border-left:solid 1px #727274; border-right:solid 1px #727274; text-align:center; font-size:12px; color:#727274; text-decoration:none; padding:6px 0 6px 0;}
+a.vertodos:hover{background-color:#727274; color:#FFF;}
+
+.tabtitulo{float:left; widthz:89px; height:14px; border-top:solid 1px #727274; border-left:solid 1px #727274; border-right:solid 1px #727274; color:#FFF; text-align:center; font-size:14px; text-decoration:none; padding:4px 6px 6px 6px; font-family: 'Metrophobic', sans-serif;}
+.tabmod{width:137px; margin:5px 8px 5px 0; float:left;}
+.tabmodfoto{height:137px;}
+.tabmodb{height:55px; background-color:#E0E0E0; padding:5px;}
+.tabmodb h1{font-size:11px; color:#313133; font-family:Verdana, Geneva, sans-serif; height:24px; margin:3px 0 6px 3px;}
+
+.tabmodprod{width:137px; margin:5px 11px 5px 0; float:left;}
+.tabmodfotoprod{height:89px;}
+.tabmodbprod{height:85px; background-color:#E0E0E0; padding:5px;}
+.tabmodbprod h1{font-size:11px; color:#313133; font-family:Verdana, Geneva, sans-serif; margin:3px 0 6px 3px; height:51px;}
+
+.comercio{background-color:#A3A3A3; margin:0 0 19px 0;}
+
+a.volver{
+	float:left;
+	display:block;
+	width:79px;
+	height:12px;
+	border:solid 1px #727274;
+	margin:0 0 0 3px;
+	text-align:center;
+	font-size:11px;
+	color:#727274;
+	text-decoration:none;
+	padding:2px 0 2px 0;
+	position:absolute;
+	left: 513px;
+	top: 2px;
+	bottom:4px;
+	font-family: 'Metrophobic', sans-serif;
+}
+a.volver:hover{background-color:#727274; color:#FFF;}
+a.volver2{	
+	display:block;
+	width:79px;
+	height:12px;
+	border:solid 1px #727274;
+	margin:0 0 0 3px;
+	text-align:center;
+	font-size:11px;
+	color:#727274;
+	text-decoration:none;
+	padding:2px 0 2px 0;
+	margin:0 0 3px 0;	
+	font-family: 'Metrophobic', sans-serif;
+}
+a.volver2:hover{background-color:#727274; color:#FFF;}
+.detalle{margin:3px 0 0 0; width:572px;}
+.detalle h1{font-family: 'Metrophobic', sans-serif; font-size:16px; color:#FFF; padding:6px;}
+.detalle_texto{padding:10px; color:#515757; font-family:Verdana, Geneva, sans-serif;}
+.detalle_texto p{margin:10px 0 10px 0; font-family:Verdana, Geneva, sans-serif;}
+.detalle_texto ul{padding:14px 0 14px 0;}
+.detalle_texto li{list-style:inside; color:#000; margin:5px 0 5px 0; font-family:Verdana, Geneva, sans-serif;}
+.tabmodc{height:29px; padding:31px 0 0 0; background-color:#E0E0E0; width:572px;}
+
+
+a.bot1{display:block; padding:9px; font-size:19px; background-color:#F39500; color:#FFF; text-align:center; float:left; text-decoration:none; margin:31px 10px 0 0; font-family:"Century Gothic";}
+a.bot1:hover{background-color:#969A9B; color:#FFF;}
+
+.video{float:left; width:430px; margin:0 31px 41px 0;}
+.video h1{color:#F39301; font-size:14px; margin:0 0 10px 0;}
+
+#comercio p{font-size:16px; font-weightz:bold;}
+
+.pie{background-color:#515757; height:133px; padding:6px 0 0 0; color:#969A9B; margin:0 0 0 0;}
+.pie a{color:#969A9B; text-decoration:none;}
+.pie a:hover{color:#FFF;}
+.pie h1{color:#FFF; margin:0 0 9px 0; font-size:14px;}
+.pie li{list-style:inside; list-style-type:disc; color:#969A9B;}
+.pie p{margin:0 0 2px 0;}

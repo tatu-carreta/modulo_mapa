@@ -164,22 +164,50 @@
 
 {% block contenido %}
     <section class="container">
-        <h1>Agregar</h1>
-        <form id="agregar-local" method="post" action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php">
-            <h2><span>Carga y modificación de locales</span></h2>
-            
-            <!-- Abre columna de descripción -->
-            <div>
-                <h3>Nombre</h3>
-                <input type="text" name="nombre" placeholder="Nombre" required="true">
-
-                <h3>Dirección</h3>
-                <input type="text" name="direccion" placeholder="Calle X Nº, Localidad, Provincia, País" required="true">
+        <div class="row titulo">
+            <div class="col-md-4">
+                <div class="tit2">DONDE COMPRAR - Mapa</div>
             </div>
-            <input id="pac-input" class="controls" type="text" placeholder="Buscar">
-            <div id="map_canvas" style="width:900px; height:600px"></div>
+            <div class="col-md-8">
+                {% if(logueado) %}
+                    {% include 'desplegar-menu.twig' %}
+                {% endif %}
+            </div>
+        </div>
+        <form id="agregar-local" method="post" action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="listado">
+                        <h4>Nuevo local</h4>
+                    </div>
+                    <!-- Abre columna de descripción -->
 
-            <div class="clear"></div>
+                    <div class="listado">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="nombre" placeholder="Nombre del local" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="direccion" placeholder="Dirección y localidad" required="true">
+                        </div>
+                    </div>
+                    <div class="botones-dondecomprar">
+                        <input type="submit"  value ="Guardar" class="btn btn-primary"></input>
+                        <input type="submit"  value ="Cancelar" class="btn btn-default"></input>
+                    </div>
+
+                    <h5 class="lista">Cómo agregar:</h5>
+                    <ul class="como-agregar">
+                        <li>1) busque en el mapa la ubicación del local</li>
+                        <li>2) ingrese nombre y dirección</li>
+                        <li>3) guarde</li>
+                    </ul>   
+
+                </div>
+                <div class="col-md-8">
+                    <input id="pac-input" class="controls" type="text" placeholder="Buscar">
+                        <div class="mapa-locales" id="map_canvas" ></div>
+                </div>
+            </div>            
             <!-- cierran columnas -->
 
             <div>

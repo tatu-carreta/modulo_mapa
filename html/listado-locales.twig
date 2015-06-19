@@ -277,16 +277,47 @@
 
 {% block contenido %}
     <section class="container">
-        <h1>Listado</h1>
+        <div class="row titulo">
+            <div class="col-md-4">
+                <div class="tit2">DONDE COMPRAR - Mapa</div>
+            </div>
+            <div class="col-md-8">
+                {% if(logueado) %}
+                    {% include 'desplegar-menu.twig' %}
+                {% endif %}
+            </div>
+        </div>
         <div class="row">
             <input id="pac-input" class="controls" type="text" placeholder="Buscar">
         </div>
-        <div class="row">
-            <div id="map_canvas" style="width:900px; height:600px"></div>
+        <div class="row"> 
+            <div class="col-md-4">
+                <div class="listado">
+                    <h4>Listado de locales</h4>
+                    <ul class="listado-locales">
+                        <li>
+                            <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                            <input type="submit"  value ="Editar" class="btn btn-primary"></input>
+                            <input type="submit"  value ="Cancelar" class="btn btn-default"></input>
+                        </li>
+                        <li>
+                            <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                            <input type="submit"  value ="Editar" class="btn btn-primary"></input>
+                            <input type="submit"  value ="Cancelar" class="btn btn-default"></input>
+                        </li>
+                        <li>
+                            <p>Nombre del local <br> Calle 48 Nro 650, La Plata</p>
+                            <input type="submit"  value ="Editar" class="btn btn-primary"></input>
+                            <input type="submit"  value ="Cancelar" class="btn btn-default"></input>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mapa-locales" id="map_canvas" ></div>
+            </div>
         </div>
-        <div class="listado">
-            
-        </div>
+        
 
     </section>
 {% endblock %}
