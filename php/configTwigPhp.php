@@ -15,6 +15,7 @@ $paths = array('PATH_HOME' => PATH_HOME,
     'PATH_JS' => PATH_JS,
     'PATH_ADMIN' => PATH_ADMIN,
     'PATH_IMAGES' => PATH_IMAGES,
+    'PATH_HEDALY' => PATH_HEDALY,
 );
 
 $logueado = false;

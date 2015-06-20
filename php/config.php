@@ -26,6 +26,7 @@ if (!$localhost) {
 
     switch ($_SERVER['HTTP_HOST']) {
         case "":
+            define("URL_HEDALY", "http://hedaly.com.ar/");
             define("URL_TOTAL", "");
 
             break;
@@ -37,6 +38,7 @@ if (!$localhost) {
     define("DB_SELECTED", "");
 } else {
 
+    define("URL_HEDALY", "http://hedaly.com.ar/");
     define("URL_TOTAL", "http://localhost/modulo_mapa/");
     define("DB_USER", "root");
     define("DB_PASS", "");
@@ -49,6 +51,7 @@ if (!$localhost) {
  * url amigable a traves de .htaccess
  */
 
+define("PATH_HEDALY", URL_HEDALY);
 define("PATH_HOME", URL_TOTAL);
 define("PATH_CSS", URL_TOTAL . "css/");
 define("PATH_PHP", URL_TOTAL . "php/");
