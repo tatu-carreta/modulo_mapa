@@ -38,30 +38,32 @@
 
             <!-- H E A D E R -->
             <header>
-                <div class="header">
-                    <div class="container">
-                        <div class="row titulo">
-                            <div class="col-md-4">
-                                <img src="{{ paths.PATH_HEDALY }}imagenes/logo_hedaly.png" width="195" height="107">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="pull-right">
-                                    {% if(logueado) %}
-                                        <form action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php" method="post">
-                                            <span class="nameAdmin"><i class="fa fa-user fa-lg marginRight5"></i>{{ nombre_visible }}</span>
-                                            <input type="hidden" name="section" value="logout">
-                                            <input type="submit"  value ="Salir" class="btn btn-primary"></input>
-                                        </form>
-                                    {% else %}
-                                        <div class="divSalir">
-                                            <a href="{{ paths.PATH_CONTROLLER }}controladorAdmin.php?seccion=login" class="btnCalado"><i class="fa fa-share  fa-lg"></i>Ingresar</a>
-                                        </div>
-                                    {% endif %}
+                <div class="encabezado">
+                    <div class="header">
+                        <div class="container">
+                            <div class="row titulo">
+                                <div class="col-md-4">
+                                    <img src="{{ paths.PATH_HEDALY }}imagenes/logo_hedaly.png" width="195" height="107">
                                 </div>
-                                <div class="clearfix"></div>
+                                <div class="col-md-8">
+                                    <div class="pull-right">
+                                        {% if(logueado) %}
+                                            <form action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php" method="post">
+                                                <span class="nameAdmin"><i class="fa fa-user fa-lg marginRight5"></i>{{ nombre_visible }}</span>
+                                                <input type="hidden" name="section" value="logout">
+                                                <input type="submit"  value ="Salir" class="btn btn-primary"></input>
+                                            </form>
+                                        {% else %}
+                                            <div class="divSalir">
+                                                <a href="{{ paths.PATH_CONTROLLER }}controladorAdmin.php?seccion=login" class="btnCalado"><i class="fa fa-share  fa-lg"></i>Ingresar</a>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                </div>
                 </div>
             </header>          
         {% endblock %}
