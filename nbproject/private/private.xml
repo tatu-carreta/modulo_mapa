@@ -3,17 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/agregar-local.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/script-mapa.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/php/config.php</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/php/configTwigPhp.php</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/master.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/index.php</file>
             <file>file:/C:/xampp/htdocs/modulo_mapa/html/listado-locales.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/script-mapa-editar.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/mapa.twig</file>
-            <file>file:/C:/xampp/htdocs/modulo_mapa/html/script-mapa-agregar.twig</file>
             <file>file:/C:/xampp/htdocs/modulo_mapa/html/editar-local.twig</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/html/script-mapa.twig</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/controller/controladorAdmin.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/php/validate/validateUsuario.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/controller/controladorAdminModel.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/html/agregar-local.twig</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/css/estilos-mapa.css</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/html/master.twig</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/html/script-mapa-agregar.twig</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/php/funciones/funcionesUsuario.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/admin/login.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/php/config.php</file>
+            <file>file:/C:/xampp/htdocs/modulo_mapa/php/funciones/funcionesConector.php</file>
         </group>
     </open-files>
 </project-private>

@@ -52,6 +52,9 @@
                             position.coords.longitude);
 
                     map.setCenter(miPosicion);
+                    
+                    $(".listado-locales").html("");
+                    cargarLocales();
                 }, function () {
                     handleNoGeolocation(true);
                 });
@@ -68,7 +71,7 @@
 
         //inicializacion del mapa en La Plata
         var mapOptions = {
-            center: new google.maps.LatLng(-34.92125, -57.95433329999997),
+            center: new google.maps.LatLng(-34.7351809, -58.33506779999999),
             zoom: 13,
         };
         map = new google.maps.Map(document.getElementById("map_canvas"),
@@ -188,9 +191,9 @@
             });
             markers.push(marker);
             {% if(not logueado) %}
-                data.descripcion = "<div class='listado-locales' style='width:100px;height:80px;'><p>" + data.nombre + "<br>" + data.direccion + "</p></div>";
+                data.descripcion = "<div class='listado-locales box-local-mapa' style='width:100px;height:80px;'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p></div>";
             {% else %}
-                data.descripcion = "<div class='listado-locales'><p>" + data.nombre + "<br>" + data.direccion + "</p>\n\
+                data.descripcion = "<div class='listado-locales box-local-mapa'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p>\n\
                                     <div class='botones'>\n\
                                     <form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
                                         <input type='hidden' name='local' value='" + data.id + "'><input type='submit' value='Editar' class='btn btn-primary'></form>\n\
@@ -250,9 +253,9 @@
                 $.each(listadoLocales, function (i, data)
                 {
                     {% if(not logueado) %}
-                        $(".listado-locales").append("<li onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'><p>" + data.nombre + "<br>" + data.direccion + "</p></li>");
+                        $(".listado-locales").append("<li onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p></li>");
                     {% else %}
-                        $(".listado-locales").append("<li onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'><p>"+data.nombre+"<br>"+data.direccion+"</p>\n\
+                        $(".listado-locales").append("<li onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'><p><strong>"+data.nombre+"</strong><br>"+data.direccion+"</p>\n\
                                     <div class='botones'>\n\
                                     <form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
                                         <input type='hidden' name='local' value='"+data.id+"'><input type='submit' value='Editar' class='btn btn-primary'></form>\n\

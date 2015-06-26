@@ -25,17 +25,27 @@ $proyecto = "MAPA";
 if (!$localhost) {
 
     switch ($_SERVER['HTTP_HOST']) {
-        case "":
+        case "http://hedaly.com.ar/":
             define("URL_HEDALY", "http://hedaly.com.ar/");
-            define("URL_TOTAL", "");
+            define("URL_TOTAL", "http://hedaly.com.ar/modulo_mapa/");
 
+            break;
+        case "http://www.hedaly.com.ar/":
+            define("URL_HEDALY", "http://www.hedaly.com.ar/");
+            define("URL_TOTAL", "http://www.hedaly.com.ar/modulo_mapa/");
+
+            break;
+        default :
+            define("URL_HEDALY", "http://hedaly.com.ar/");
+            define("URL_TOTAL", "http://hedaly.com.ar/modulo_mapa/");
+            
             break;
     }
 
-    define("DB_USER", "");
-    define("DB_PASS", "");
-    define("DB_HOST", "");
-    define("DB_SELECTED", "");
+    define("DB_USER", "hedaly12_md_mp");
+    define("DB_PASS", "H12_md_MP");
+    define("DB_HOST", "10.0.10.24");
+    define("DB_SELECTED", "hedaly12_md_mp");
 } else {
 
     define("URL_HEDALY", "http://hedaly.com.ar/");
