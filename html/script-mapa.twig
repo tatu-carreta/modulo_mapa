@@ -188,14 +188,15 @@
             });
             markers.push(marker);
             {% if(not logueado) %}
-                data.descripcion = "<h2>" + data.nombre + "</h2><br><p>" + data.direccion + "</p>";
+                data.descripcion = "<div class='listado-locales' style='width:100px;height:80px;'><p>" + data.nombre + "<br>" + data.direccion + "</p></div>";
             {% else %}
-                data.descripcion = "<h2>" + data.nombre + "</h2><br><p>" + data.direccion + "</p>\n\
-                                    <br><form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
-                                        <input type='hidden' name='local' value='" + data.id + "'><input type='submit' value='editar'></form>\n\
-                                    <br><form id='form-borrar-local-" + data.id + "' method='post' action='{{paths.PATH_CONTROLLER}}controladorAdminModel.php' >\n\
+                data.descripcion = "<div class='listado-locales'><p>" + data.nombre + "<br>" + data.direccion + "</p>\n\
+                                    <div class='botones'>\n\
+                                    <form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
+                                        <input type='hidden' name='local' value='" + data.id + "'><input type='submit' value='Editar' class='btn btn-primary'></form>\n\
+                                    <form id='form-borrar-local-" + data.id + "' method='post' action='{{paths.PATH_CONTROLLER}}controladorAdminModel.php' >\n\
                                         <input type='hidden' name='section' value='borrar-local'>\n\
-                                        <input type='hidden' name='local' value='" + data.id + "'><input onclick='borrarLocal(" + data.id + ")' type='button' value='borrar'></form>";
+                                        <input type='hidden' name='local' value='" + data.id + "'><input onclick='borrarLocal(" + data.id + ")' type='button' value='Borrar' class='btn btn-default'></form></div></div>";
             {% endif %}
                 bindInfoWindow(marker, map, infowindow, data.descripcion);
 
@@ -252,11 +253,12 @@
                         $(".listado-locales").append("<p onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'>" + data.nombre + "<br>" + data.direccion + "</p>");
                     {% else %}
                         $(".listado-locales").append("<li onmouseover='moverMarker("+i+")' onmouseout='dejarMoverMarker("+i+")'><p>"+data.nombre+"<br>"+data.direccion+"</p>\n\
-                                    <br><form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
+                                    <div class='botones'>\n\
+                                    <form action='{{paths.PATH_CONTROLLER}}controladorAdmin.php?seccion=editar-local' method='post'>\n\
                                         <input type='hidden' name='local' value='"+data.id+"'><input type='submit' value='Editar' class='btn btn-primary'></form>\n\
-                                    <br><form id='form-borrar-local-"+data.id+"' method='post' action='{{paths.PATH_CONTROLLER}}controladorAdminModel.php' >\n\
+                                    <form id='form-borrar-local-"+data.id+"' method='post' action='{{paths.PATH_CONTROLLER}}controladorAdminModel.php' >\n\
                                         <input type='hidden' name='section' value='borrar-local'>\n\
-                                        <input type='hidden' name='local' value='"+data.id+"'><input onclick='borrarLocal("+data.id+")' type='button' value='Borrar' class='btn btn-default'></form>");
+                                        <input type='hidden' name='local' value='"+data.id+"'><input onclick='borrarLocal("+data.id+")' type='button' value='Borrar' class='btn btn-default'></form></div>");
                     {% endif %}
                 });
             } else {
