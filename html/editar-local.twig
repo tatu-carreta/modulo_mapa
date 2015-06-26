@@ -11,16 +11,17 @@
         <form id="editar-local" method="post" action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php">
             <div class="contenido-mapa row">
                 <div class="col-md-4">
-                    <div class="tit2">CARGA Y MODIFICACIÓN <br>DE LOCALES</div>
+                    <div class="tit2">EDITAR LOCAL</div>
 
-                    <!-- Abre columna de descripción -->
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="nombre" placeholder="Nombre del local" required="true" value="{% autoescape false %}{{ datosLocal.nombre }}{% endautoescape %}">
+                    <div class="listado">
+                        <!-- Abre columna de descripción -->
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="nombre" placeholder="Nombre del local" required="true" value="{% autoescape false %}{{ datosLocal.nombre }}{% endautoescape %}">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="direccion" placeholder="Dirección y localidad" required="true" value="{% autoescape false %}{{ datosLocal.direccion }}{% endautoescape %}">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="direccion" placeholder="Dirección y localidad" required="true" value="{% autoescape false %}{{ datosLocal.direccion }}{% endautoescape %}">
-                    </div>
-
                     <div class="botones-dondecomprar">
                         <input type="hidden" name="latitud" value="{{ datosLocal.latitud }}">
                         <input type="hidden" name="longitud" value="{{ datosLocal.longitud }}">
