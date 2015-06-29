@@ -12,11 +12,6 @@
             <div class="col-md-4">
                 <div class="tit2">DONDE COMPRAR</div>
             </div>
-            <div class="col-md-8">
-                {% if(logueado) %}
-                    {% include 'desplegar-menu.twig' %}
-                {% endif %}
-            </div>
         </div>
         <form id="agregar-local" method="post" action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php">
             <div class="contenido-mapa row">
@@ -27,9 +22,11 @@
                     <!-- Abre columna de descripción -->
 
                     <div class="listado">
+                        {#
                         <div class="form-group">
                             <input class="form-control" type="text" name="nombre" placeholder="Nombre del local" required="true">
                         </div>
+                        #}
                         <div class="form-group">
                             <input class="form-control" type="text" name="direccion" placeholder="Dirección y localidad" required="true">
                         </div>

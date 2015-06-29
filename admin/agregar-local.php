@@ -14,7 +14,8 @@ $infoValidate = validarAgregarLocal();
 //$infoValidate['estado'] = true;
 if ($infoValidate['estado']) {
 
-    $nombre = sanearDatos($_POST['nombre']);
+    //$nombre = sanearDatos($_POST['nombre']);
+    $nombre = NULL;
     $direccion = sanearDatos($_POST['direccion']);
     $longitud = sanearDatos($_POST['longitud']);
     $latitud = sanearDatos($_POST['latitud']);

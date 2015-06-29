@@ -4,9 +4,9 @@ function validarAgregarLocal() {
     $ok = false;
     $text = "";
 
-    if (!isset($_POST['nombre']) || ($_POST['nombre'] == "")) {
+    /*if (!isset($_POST['nombre']) || ($_POST['nombre'] == "")) {
         $text = "Problema en el nombre.";
-    } elseif (!isset($_POST['direccion']) || ($_POST['direccion'] == "")) {
+    } else*/if (!isset($_POST['direccion']) || ($_POST['direccion'] == "")) {
         $text = "Problema en la dirección.";
     } elseif (!isset($_POST['latitud']) || ($_POST['latitud'] == "")) {
         $text = "Problema en las coordenadas.";
@@ -30,9 +30,9 @@ function validarModificarLocal() {
 
     if (!isset($_POST['local']) || ($_POST['local'] == "") || (!is_numeric($_POST['local']))) {
         $text = "Problema en los datos ingresados. Intente nuevamente.";
-    } elseif (!isset($_POST['nombre']) || ($_POST['nombre'] == "")) {
+    } /*elseif (!isset($_POST['nombre']) || ($_POST['nombre'] == "")) {
         $text = "Problema en el nombre.";
-    } elseif (!isset($_POST['direccion']) || ($_POST['direccion'] == "")) {
+    } */elseif (!isset($_POST['direccion']) || ($_POST['direccion'] == "")) {
         $text = "Problema en la dirección.";
     } elseif (!isset($_POST['latitud']) || ($_POST['latitud'] == "")) {
         $text = "Problema en las coordenadas.";

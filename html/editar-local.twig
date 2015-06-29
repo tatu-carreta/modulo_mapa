@@ -15,9 +15,11 @@
 
                     <div class="listado">
                         <!-- Abre columna de descripción -->
+                        {#
                         <div class="form-group">
                             <input class="form-control" type="text" name="nombre" placeholder="Nombre del local" required="true" value="{% autoescape false %}{{ datosLocal.nombre }}{% endautoescape %}">
                         </div>
+                        #}
                         <div class="form-group">
                             <input class="form-control" type="text" name="direccion" placeholder="Dirección y localidad" required="true" value="{% autoescape false %}{{ datosLocal.direccion }}{% endautoescape %}">
                         </div>
