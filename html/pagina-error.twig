@@ -2,7 +2,9 @@
 
 {% block contenido %}
     <section class="container">
-        <div class="tit2">Página de error</div>
-        <p>{% if(texto is defined) %}{{ texto }}{% else %}{% endif %}</p>
+    	<div class="pagina-error">
+	        <div class="tit2">Página de error</div>
+	        <p>{% if(texto is defined) %}{{ texto }}{% else %}{% endif %}</p>
+    	</div>
     </section>
 {% endblock %}

@@ -49,7 +49,7 @@
                                     <div class="pull-right">
                                         {% if(logueado) %}
                                             <form action="{{ paths.PATH_CONTROLLER }}controladorAdminModel.php" method="post">
-                                                <span class="nameAdmin"><i class="fa fa-user fa-lg marginRight5"></i>{{ nombre_visible }}</span>
+                                                <span class="nameAdmin">{{ nombre_visible }}</span>
                                                 <input type="hidden" name="section" value="logout">
                                                 <input type="submit"  value ="Salir" class="btn btn-primary"></input>
                                             </form>
