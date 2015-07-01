@@ -13,6 +13,6 @@ h4 {color:#4E4F51; font-size: 18px !important; padding-bottom: 10px !important; 
 .login{width:400px ;height:100%; margin-left: 300px; margin-top: 60px; margin-bottom: 60px; background-color:#CCCFC6;border-top: 2px solid #A3A3A3; padding: 30px 40px; }
 .botones form{display: inline-block;}
 .encabezado{border-bottom: 1px solid #DCDAE3; width:1001px;margin:0 auto; }
-.box-local-mapa{min-width: 100px !important;max-width: 150px !important;}
+.box-local-mapa{min-width: 150px !important;max-width: 300px !important;height:80px;}
 .pagina-error{width: 100%;padding:10px 0 50px 10px; line-height: 2.5em;}
 .nameAdmin{margin-right: 10px; color:#4E4F51}

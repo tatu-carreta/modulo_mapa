@@ -191,7 +191,7 @@
             });
             markers.push(marker);
             {% if(not logueado) %}
-                data.descripcion = "<div class='listado-locales box-local-mapa' style='width:100px;height:80px;'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p></div>";
+                data.descripcion = "<div class='listado-locales box-local-mapa'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p></div>";
             {% else %}
                 data.descripcion = "<div class='listado-locales box-local-mapa'><p><strong>" + data.nombre + "</strong><br>" + data.direccion + "</p>\n\
                                     <div class='botones'>\n\
