@@ -72,7 +72,7 @@
         //inicializacion del mapa en La Plata
         var mapOptions = {
             center: new google.maps.LatLng(-34.7351809, -58.33506779999999),
-            zoom: 13,
+            zoom: 12,
         };
         map = new google.maps.Map(document.getElementById("map_canvas"),
                 mapOptions);
@@ -203,7 +203,7 @@
             {% endif %}
                 bindInfoWindow(marker, map, infowindow, data.descripcion);
 
-                if (google.maps.geometry.spherical.computeDistanceBetween(latLng, map.getCenter(), 1000) <= 1) {
+                if (google.maps.geometry.spherical.computeDistanceBetween(latLng, map.getCenter(), 1000) <= 1.5) {
                     data.marker = marker;
                     listadoLocales.push(data);
                 }
