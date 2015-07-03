@@ -72,13 +72,14 @@
         //inicializacion del mapa en La Plata
         var mapOptions = {
             center: new google.maps.LatLng(-34.7351809, -58.33506779999999),
-            zoom: 12,
+            zoom: 5,
         };
         map = new google.maps.Map(document.getElementById("map_canvas"),
                 mapOptions);
 
+                var primera = true;
 
-        cargarLocales();
+        cargarLocales(primera);
 
         // Create the DIV to hold the control and
         // call the CenterControl() constructor passing
@@ -174,7 +175,7 @@
         });
     }
 
-    function cargarLocales() {
+    function cargarLocales(primera) {
         //deleteMarkers();
         deleteListadoLocales();
 
@@ -209,7 +210,11 @@
                 }
             });
 
+            if(!primera)
+            {
+
             mostrarListadoLocales();
+            }
         }
 
         function moverMarker(i){
